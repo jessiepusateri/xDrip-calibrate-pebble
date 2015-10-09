@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "jessiepusateri@gmail.com",
+    "longName": "Calibrate",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Calibrate",
+    "uuid": "3fb89cf5-d6ef-4f89-b40f-7e1d1fc02cc1",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
