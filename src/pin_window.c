@@ -33,12 +33,12 @@ static void selection_handle_dec(int index, uint8_t clicks, void *context) {
   }
 }
 
-//PinWindow* pin_window_create(PinWindowCallbacks callbacks) {
-PinWindow* pin_window_create() {
+PinWindow* pin_window_create(PinWindowCallbacks callbacks) {
+//PinWindow* pin_window_create() {
   PinWindow *pin_window = (PinWindow*)malloc(sizeof(PinWindow));
   if (pin_window) {
     pin_window->window = window_create();
-    //pin_window->callbacks = callbacks;
+    pin_window->callbacks = callbacks;
     if (pin_window->window) {
       pin_window->field_selection = 0;
       for(int i = 0; i < NUM_CELLS; i++) {

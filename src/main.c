@@ -1,13 +1,11 @@
 #include <pebble.h>
 #include "pin_window.h"
-#include "selection_layer.h"
 
 static Window *s_main_window;
 static MenuLayer *s_menu_layer;
-static TextLayer *s_time_layer;
 
 static void pin_complete_callback(PIN pin, void *context) {
-  APP_LOG(APP_LOG_LEVEL_INFO, "Pin was %d %d %d", pin.digits[0], pin.digits[1], pin.digits[2]);
+  APP_LOG(APP_LOG_LEVEL_INFO, "Blood sugar was %d %d %d", pin.digits[0], pin.digits[1], pin.digits[2]);
   pin_window_pop((PinWindow*)context, true);
 }
 
@@ -38,7 +36,7 @@ static void deinit() {
   window_destroy(s_main_window);
 }
   
-int main(void) {
+int main() {
   init();
   app_event_loop();
   deinit();

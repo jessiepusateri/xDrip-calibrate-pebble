@@ -35,8 +35,8 @@ typedef struct {
  *  pin_window_callbacks: callbacks for communication
  *  returns: a pointer to a new PinWindow structure
  */
-//PinWindow* pin_window_create(PinWindowCallbacks pin_window_callbacks);
-PinWindow* pin_window_create();
+PinWindow* pin_window_create(PinWindowCallbacks pin_window_callbacks);
+//PinWindow* pin_window_create();
 
 /*
  * Destroys an existing PinWindow

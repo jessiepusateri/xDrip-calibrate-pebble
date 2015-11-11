@@ -74,4 +74,3 @@ void selection_layer_set_active(Layer *layer, bool is_active);
 void selection_layer_set_click_config_onto_window(Layer *layer, struct Window *window);
 
 void selection_layer_set_callbacks(Layer *layer, void *context, SelectionLayerCallbacks callbacks);
-
